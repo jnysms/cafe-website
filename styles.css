@@ -1,0 +1,266 @@
+/*
+Color Palette
+seashell
+black
+pink
+#666
+#999
+*/
+
+/*Universal Styling General*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*reset browser's default values*/
+    padding: 0;
+    /*reset browser's default values*/
+}
+
+/*Universal Styling HTML*/
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/*Visited Links Turn Gray*/
+a:visited {
+    color: #999;
+}
+
+/*Hover Over Link Turns Pink*/
+a:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+/*Universal Styling Headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    border: none;
+    background-color: black;
+    /*Needed for Mission Picture Text Background*/
+}
+
+h3 {
+    color: #999;
+    margin-top: 30px;
+}
+
+/*------------------------------------------------*/
+/*Header Section*/
+header {
+    background-color: black;
+    padding: 0px;
+    height: 69px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /*keeps header section in a fixed place but page can scroll*/
+    z-index: 20;
+}
+
+/*Logo in Header Section, Left Aligned*/
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/*Navbar in Header Section, Right Aligned*/
+/*Styles Navbar Area Generally*/
+nav {
+    margin-right: 10px;
+    padding: 0px;
+}
+
+/*Styles Navbar Links & Space Between Links*/
+nav ul li {
+    list-style: none;
+    /*Removes Bullet Points*/
+    display: inline;
+    /*Puts Links Side by Side*/
+    color: seashell;
+    font-size: 20px;
+    margin: 2px;
+    /*Space Between Links*/
+    padding: 0px;
+}
+
+/*------------------------------------------------*/
+/*Mission Section*/
+
+/*Grid Container for Mission Section*/
+#container {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Container for Mission Text Bar (h2 and h4)*/
+.mission-header {
+    margin-top: -425px;
+    margin-right: auto;
+    margin-left: auto;
+    height: fit-content;
+    padding: 0px;
+    width: 1200px;
+    z-index: 0;
+}
+
+/*Styles Mission h2 Individually*/
+#mission-h2 {
+    padding: 10px;
+    margin-top: 0px;
+    color: seashell;
+}
+
+/*Styles Mission h4 Individually*/
+#mission-h4 {
+    padding-bottom: 10px;
+    margin: 0px;
+    color: seashell;
+}
+
+/*------------------------------------------------*/
+/*Tea of the Month Section*/
+
+/*Tea of the Month Header*/
+#tea-header {
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+/*Flex Container for Tea of the Month Figure Images*/
+#container-2 {
+    padding: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    /*this allows center items within the feature div*/
+    flex-wrap: wrap;
+    /*this allows center items within the feature div and wrap to another row*/
+    width: 1000px;
+    border: none;
+    justify-content: center;
+    /*this centers items within the feature div*/
+}
+
+/*Individual Containers for Each Figure Image*/
+.figure {
+    margin: 10px;
+}
+
+/*Caption for Images Using Figure Sections*/
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 10px;
+    color: seashell;
+}
+
+/*------------------------------------------------*/
+/*Locations Section*/
+
+/*Locations Header*/
+#locations-heading {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/*Locations Background Image*/
+#locations-pic {
+    padding-top: 0px;
+    margin-top: 50px;
+}
+
+/*Location List Item - Container Box of Boxes*/
+#locations {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -455px;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*Location List Item - Boxes*/
+#downtown,
+#east-bayside,
+#oakdale {
+    background-color: black;
+    display: inline-block;
+    color: #666;
+    width: 300px;
+    height: 300px;
+    padding-top: 5px;
+    margin: 10px;
+}
+
+p {
+    color: #666;
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 3.0;
+}
+
+/*------------------------------------------------*/
+/*Contact Section*/
+
+/*Styles Contact Section*/
+.contact {
+    margin-top: 90px;
+    height: 200px;
+    width: min-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Contact Section h2 Individually*/
+#contact-h2 {
+    color: #666;
+    background-color: transparent;
+    padding: 0px;
+}
+
+/*Contact Section h5 Individually*/
+#contact-h5 {
+    color: #666;
+    background-color: transparent;
+    padding: 0px;
+    margin: 30px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/*------------------------------------------------*/
+/*Footer Section*/
+footer {
+    color: seashell;
+    margin-top: auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+/*Footer Text and Copyright*/
+h6 {
+    color: #666;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*The End*/
